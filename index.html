@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahtera Ilmu</title>
+  <link rel="stylesheet" href="style.css" /><br>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header>
+    <div class="logo"><br>
+	<img src="C:\Users\User\Downloads\sekola_saya_main_page\logobahterailmu.png" alt="logo bahtera">
+</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">FAQ</a>
+      <a href="#">Programs</a>
+      <a href="#">Admission</a>
+      <a href="#">Career</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Bahtera Ilmu Nusa Subang</h1>
+      <p>Discover what makes our school special!</p>
+    </div>
+    <div class="hero-image">
+	    <img src="C:\Users\User\Downloads\sekola_saya_main_page\p2.jpg" alt="Bahtera Ilmu Kids">
+	  </div>
+  </section>
+
+  <!-- Mini Navigation Bar -->
+  <div class="mini-navbar">
+    <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#vision">Vision</a>
+    <a href="#news">News</a>
+    <a href="#contact">Find Us</a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-image"></div>
+    <div class="about-text">
+      <h2>About Our School</h2>
+      <p>Bahtera Ilmu Nusa Subang is a nurturing elementary school committed to shaping curious, confident, and compassionate young minds. Located in a peaceful and inspiring environment, our school blends academic excellence with character development, creativity, and community values. Through interactive learning, holistic programs, and dedicated teachers, we strive to create a joyful foundation for lifelong learning — where every child feels seen, supported, and encouraged to explore their fullest potential.</p>
+    </div>
+</section>
+ <section class="gallery-section">
+  <div class="gallery-wrapper">
+    <button class="scroll-btn left" onclick="scrollGallery(-1)">&#10094;</button>
+
+    <div class="gallery-container" id="imageGallery">
+       <!-- Replace with your real image URLs later -->
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p8.jpg" alt="School Area 1" />
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p9.jpg" alt="School Area 2" />
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p1.jpg" alt="School Area 3" />
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p3.jpg" alt="School Area 4" />
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p5.jpg" alt="School Area 5" />
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p4.jpg" alt="School Area 6" />
+    </div>
+		
+		 <button class="scroll-btn right" onclick="scrollGallery(1)">&#10095;</button>
+  </div>
+  </section>
+
+  <!-- Mission and Vision -->
+<section class="mission-vision">
+  <div class="box" id="missionBox">
+    <h3>Our Mission</h3>
+    <p class="short">Voyage . Explore . Discover&nbsp;</p>
+    <p class="full hidden">
+      Our mission is to empower communities through sustainable initiatives that promote education, well-being, and innovation.
+    </p>
+    <button onclick="toggleBox('missionBox')">View More</button>
+  </div>
+
+  <div class="box" id="visionBox">
+    <h3>Our Vision</h3>
+    <p class="short">Knowledge for All.</p>
+    <p class="full hidden">
+      Our vision is a world where every individual has the opportunity and resources to thrive, creating a future of equity and progress.
+    </p>
+    <button onclick="toggleBox('visionBox')">View More</button>
+  </div>
+</section>
+
+  <!-- News Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bahtera Ilmu News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	
+
+<section class="mission-vision">
+	
+  <!-- your mission/vision boxes here -->
+
+	<h1 class="section-title">Bahtera Ilmu News</h1>
+  <section class="news-section">
+    <div class="news-image">
+      <img src="C:\Users\User\Downloads\sekola_saya_main_page\p8.jpg" alt="School News Image" />
+    </div>
+
+    <div class="news-content">
+      <div class="news-box">
+        <h3>Bahtera Ilmu Launches Creative Learning Week 2025</h3>
+        <p>Students and teachers come together for a week filled with innovation, art, and hands-on projects.</p>
+      </div>
+
+      <div class="news-box">
+        <h3>Students Win Gold at Subang Education Fair</h3>
+        <p>Bahtera Ilmu students proudly take home awards in science exhibitions and traditional dance competitions.</p>
+      </div>
+
+      <div class="news-box">
+        <h3>Greening Subang: Tree Planting Drive</h3>
+        <p>Our school partners with the local community to promote environmental sustainability and awareness.</p>
+      </div>
+    </div>
+  </section>
+</section>
+</body>
+</html>
+
+  <!-- Footer -->
+  <footer>
+    <p>🏫2, Jalan Rabung U8/36A, Bukit Jelutong, 40150 Shah Alam, Selangor Darul Ehsan</p>
+  </footer>
+  <script src="script.js"></script>
+	  
+	  <script>
+  function scrollGallery(direction) {
+    const gallery = document.getElementById('imageGallery');
+    const scrollAmount = 220; // Adjust based on your image width + gap
+
+    gallery.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+	
+	
+	<script>
+  function toggleBox(boxId) {
+    const box = document.getElementById(boxId);
+    const fullText = box.querySelector(".full");
+    const button = box.querySelector("button");
+
+    if (fullText.classList.contains("hidden")) {
+      fullText.classList.remove("hidden");
+      button.textContent = "View Less";
+      box.style.height = "auto";
+    } else {
+      fullText.classList.add("hidden");
+      button.textContent = "View More";
+      box.style.height = "";
+    }
+  }
+</script>
+	
+</body>
+</html>
